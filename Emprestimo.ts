@@ -1,10 +1,12 @@
 import { Livro } from './Livro';
 import { Membro } from './Membro';
 
+//Valida a data
 function isValidDate(date: Date): boolean {
     return date instanceof Date && !isNaN(date.getTime());
 }
 
+//Ao criar emprestimno a dataDevolução recebe NULO, só quando a devolução é registrada que ele recebe um DATE
 export class Emprestimo {
     private livro: Livro;
     private membro: Membro;

@@ -8,10 +8,11 @@ export class Membro extends Pessoa {
         this._matricula = matricula;
     }
   
+    //Get para pegar o atributo
     getMatricula(): string {
         return this._matricula;
     }
-  
+    //Set permite alterar
     setMatricula(matricula: string): void {
         this._matricula = matricula;
     }
